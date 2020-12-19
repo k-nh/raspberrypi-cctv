@@ -1,0 +1,10 @@
+<html>
+<meta http-equiv="refresh" content="0.5;url={%print(path)%}">
+	<body>
+		<img src="{{ url_for('static', filename = fname) }}" />
+		<h1 style="color:red">{{message}}<h1>
+		//빨간색으로 메세지 출력
+		<h1>오차율(0~25: {{different}}<h1>
+		// 이전 사진과의 오차율이 얼마인지 출력
+	</body>
+</html>
